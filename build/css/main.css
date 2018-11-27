@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  width: 245px;
+  max-width: 100%;
+  margin: 0 auto;
+  background: #565d67;
+  position: relative;
+}
+
+.nav__input {
+  position: absolute;
+  bottom: 9999px;
+  visibility: hidden;
+}
+
+.nav__label {
+  position: absolute;
+  top: 21px;
+  right: 21px;
+  cursor: pointer;
+}
+
+.nav__label:after {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  background: url(../img/cross.png);
+}
+
+.nav__label:hover {
+  opacity: 0.2;
+}
+
+.nav__container {
+  width: 119px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.nav__li {
+  list-style-type: none;
+  margin: 0 0 45px;
+}
+
+.nav__a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font: 16px "Titillium Web", sans-serif;
+  transition: 0.2s;
+}
+
+.nav__a:hover {
+  opacity: 0.5;
+}
+
+.nav__a--small {
+  font-size: 14px;
+  font-weight: lighter;
+  display: block;
+  text-transform: none;
+}
+
+.nav__footer {
+  border-top: 1px white solid;
+}
+
+.nav__contacts {
+  width: 100%;
+  margin-top: 45px;
+  line-height: 23px;
+}
+
+.nav__social-list {
+  margin-top: 25px;
+}
+
+.nav__social-li {
+  display: inline-block;
+  margin: 5px 4px 5px 0;
+}
+
+.nav__social-li:last-child .nav__social-a {
+  padding: 1px 10.5px 2px;
+}
+
+.nav__social-a {
+  border: #ffffff 1px solid;
+  border-radius: 15px;
+  padding: 2px 12.5px 2px;
+  text-decoration: none;
+  font-family: "Titillium Web", sans-serif;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.nav__social-a:hover {
+  background: #66ff33;
+  opacity: 0.5;
+}

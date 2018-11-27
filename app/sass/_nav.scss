@@ -1,0 +1,99 @@
+.nav {
+  width: 245px;
+  max-width: 100%;
+  margin: 0 auto;
+  background: $grey;
+  position: relative;
+
+  &__input {
+    position: absolute;
+    bottom: 9999px;
+    visibility: hidden;
+  }
+
+  &__label {
+    position: absolute;
+    top: 21px;
+    right: 21px;
+    cursor: pointer;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 13px;
+      height: 13px;
+      background: url(../img/cross.png);
+    }
+
+    &:hover {
+      opacity: 0.2;
+    }
+  }
+
+  &__container {
+    width: 119px;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+
+  &__li {
+    list-style-type: none;
+    margin: 0 0 45px;
+  }
+
+  &__a {
+    text-decoration: none;
+    color: $white;
+    text-transform: uppercase;
+    font: 16px $titillium;
+    transition: 0.2s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &--small {
+      font-size: 14px;
+      font-weight: lighter;
+      display: block;
+      text-transform: none;
+    }
+  }
+
+  &__footer {
+    border-top: 1px white solid;
+  }
+
+  &__contacts {
+    width: 100%;
+    margin-top: 45px;
+    line-height: 23px;
+  }
+
+  &__social-list {
+    margin-top: 25px;
+  }
+
+  &__social-li {
+    display: inline-block;
+    margin: 5px 4px 5px 0;
+  }
+  &__social-li:last-child .nav__social-a {
+    padding: 1px 10.5px 2px;
+  }
+
+  &__social-a {
+    border: $white 1px solid;
+    border-radius: 15px;
+    padding: 2px 12.5px 2px;
+    text-decoration: none;
+    font-family: $titillium;
+    color: $white;
+    transition: 0.3s;
+
+    &:hover {
+      background: $green;
+      opacity: 0.5;
+    }
+  }
+}

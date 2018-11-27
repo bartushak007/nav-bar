@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+  head
+    title nav-bar
+    link(rel="stylesheet" href="css/main.css")      
+  body
+    div.nav
+      input(class="nav__input" type="checkbox" id="check")
+      label(class="nav__label" for="check")
+      div.nav__container       
+       ul.nav-list
+         - var values = ["home","about","work","services","team","contract"];
+           each val in values
+             li(class="nav__li")
+              a(class="nav__a" href="#")= val
+         li.nav__li
+           if user
+             a(class="nav__a" href="#") login
+           else
+             a(class="nav__a" href="#") logout   
+       .nav__footer
+          div.nav__contacts
+            a(href="tel:9125551234" class="nav__a nav__a--small") (912) 555-1234
+            a(href="#" class="nav__a nav__a--small") office@website.com         
+          ul.nav__social-list
+            - var values = ["f","t","g"];
+              each val in values
+                li(class="nav__social-li")
+                  a(class="nav__social-a" href="#")= val
