@@ -29,7 +29,7 @@ gulp.task("browser", function() {
 
 gulp.task("build", function() {
 	var buildCss = gulp.src(["app/css/*.css"]).pipe(gulp.dest("build/css"));
-	var buildCss = gulp.src(["app/images/*.*"]).pipe(gulp.dest("build/images"));
+	var buildCss = gulp.src(["app/img/*.*"]).pipe(gulp.dest("build/img"));
 	var buildHtml = gulp.src("app/*.html").pipe(gulp.dest("build"));
 });
 
